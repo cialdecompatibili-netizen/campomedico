@@ -110,6 +110,86 @@
           "nome": "PPE and medical apparel"
         }
       }
+    },
+    {
+      "nome": "Mamma e bambino",
+      "id": "mamma-bambino",
+      "icona": "🍼",
+      "tr": {
+        "en": {
+          "nome": "Mother and baby"
+        }
+      }
+    },
+    {
+      "nome": "Fisioterapia e riabilitazione",
+      "id": "fisioterapia",
+      "icona": "💪",
+      "tr": {
+        "en": {
+          "nome": "Physiotherapy and rehab"
+        }
+      }
+    },
+    {
+      "nome": "Sonno e riposo",
+      "id": "sonno-riposo",
+      "icona": "😴",
+      "tr": {
+        "en": {
+          "nome": "Sleep and rest"
+        }
+      }
+    },
+    {
+      "nome": "Cura dei piedi",
+      "id": "cura-piedi",
+      "icona": "🦶",
+      "tr": {
+        "en": {
+          "nome": "Foot care"
+        }
+      }
+    },
+    {
+      "nome": "Aiuti per la vita quotidiana",
+      "id": "aiuti-quotidiani",
+      "icona": "🤝",
+      "tr": {
+        "en": {
+          "nome": "Daily living aids"
+        }
+      }
+    },
+    {
+      "nome": "Strumenti per studio medico",
+      "id": "studio-medico",
+      "icona": "🩻",
+      "tr": {
+        "en": {
+          "nome": "Medical practice tools"
+        }
+      }
+    },
+    {
+      "nome": "Sanificazione e igiene ambienti",
+      "id": "sanificazione",
+      "icona": "🧴",
+      "tr": {
+        "en": {
+          "nome": "Sanitising and room hygiene"
+        }
+      }
+    },
+    {
+      "nome": "Autodiagnosi (da verificare)",
+      "id": "autodiagnosi",
+      "icona": "🧪",
+      "tr": {
+        "en": {
+          "nome": "Self-testing (to verify)"
+        }
+      }
     }
   ],
   "prodotti": [
@@ -547,6 +627,310 @@
           "nome": "Disposable gown",
           "descrizione": "For practices and home visits.",
           "descrizione_completa": "For practices and home visits.\n\nFeatures\nPack of 10.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "aspiratore-nasale",
+      "nome": "Aspiratore nasale elettrico",
+      "categoria": "mamma-bambino",
+      "prezzo_centesimi": 2900,
+      "descrizione": "Delicato, per liberare il naso del bambino.",
+      "descrizione_completa": "Delicato, per liberare il naso del bambino.\n\nCaratteristiche\nPunte in silicone lavabili.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🍼",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Electric nasal aspirator",
+          "descrizione": "Gentle, to clear a baby's nose.",
+          "descrizione_completa": "Gentle, to clear a baby's nose.\n\nFeatures\nWashable silicone tips.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "termometro-bambini",
+      "nome": "Termometro per bambini",
+      "categoria": "mamma-bambino",
+      "prezzo_centesimi": 1900,
+      "descrizione": "Lettura rapida, anche nel sonno.",
+      "descrizione_completa": "Lettura rapida, anche nel sonno.\n\nCaratteristiche\nFunziona a batterie.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🍼",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Thermometer for children",
+          "descrizione": "Quick reading, even during sleep.",
+          "descrizione_completa": "Quick reading, even during sleep.\n\nFeatures\nBattery powered.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "bande-elastiche",
+      "nome": "Set di bande elastiche",
+      "categoria": "fisioterapia",
+      "prezzo_centesimi": 1600,
+      "descrizione": "Tre resistenze per esercizi a casa.",
+      "descrizione_completa": "Tre resistenze per esercizi a casa.\n\nCaratteristiche\nLattice, con borsa.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "💪",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Resistance band set",
+          "descrizione": "Three resistances for exercises at home.",
+          "descrizione_completa": "Three resistances for exercises at home.\n\nFeatures\nLatex, with bag.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "pedaliera-riabilitazione",
+      "nome": "Pedaliera per riabilitazione",
+      "categoria": "fisioterapia",
+      "prezzo_centesimi": 4900,
+      "descrizione": "Per mantenere in movimento gambe e braccia da seduti.",
+      "descrizione_completa": "Per mantenere in movimento gambe e braccia da seduti.\n\nCaratteristiche\nResistenza regolabile.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "💪",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Rehab pedal exerciser",
+          "descrizione": "Keeps legs and arms moving while seated.",
+          "descrizione_completa": "Keeps legs and arms moving while seated.\n\nFeatures\nAdjustable resistance.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "cuscino-cervicale",
+      "nome": "Cuscino cervicale",
+      "categoria": "sonno-riposo",
+      "prezzo_centesimi": 3900,
+      "descrizione": "Sostiene il collo durante la notte.",
+      "descrizione_completa": "Sostiene il collo durante la notte.\n\nCaratteristiche\nMemory foam, fodera lavabile.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "😴",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Cervical pillow",
+          "descrizione": "Supports the neck during the night.",
+          "descrizione_completa": "Supports the neck during the night.\n\nFeatures\nMemory foam, washable cover.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "mascherina-sonno",
+      "nome": "Mascherina per dormire",
+      "categoria": "sonno-riposo",
+      "prezzo_centesimi": 900,
+      "descrizione": "Morbida, blocca la luce.",
+      "descrizione_completa": "Morbida, blocca la luce.\n\nCaratteristiche\nElastico regolabile.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "😴",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Sleep mask",
+          "descrizione": "Soft, blocks light.",
+          "descrizione_completa": "Soft, blocks light.\n\nFeatures\nAdjustable strap.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "solette-comfort",
+      "nome": "Solette comfort in gel",
+      "categoria": "cura-piedi",
+      "prezzo_centesimi": 1400,
+      "descrizione": "Ammortizzano il passo tutto il giorno.",
+      "descrizione_completa": "Ammortizzano il passo tutto il giorno.\n\nCaratteristiche\nTaglie regolabili da ritagliare.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🦶",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Gel comfort insoles",
+          "descrizione": "Cushion every step all day.",
+          "descrizione_completa": "Cushion every step all day.\n\nFeatures\nTrim-to-fit sizes.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "separatori-dita",
+      "nome": "Separatori per dita dei piedi",
+      "categoria": "cura-piedi",
+      "prezzo_centesimi": 800,
+      "descrizione": "Per il comfort quotidiano dei piedi.",
+      "descrizione_completa": "Per il comfort quotidiano dei piedi.\n\nCaratteristiche\nSilicone morbido.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🦶",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Toe separators",
+          "descrizione": "For everyday foot comfort.",
+          "descrizione_completa": "For everyday foot comfort.\n\nFeatures\nSoft silicone.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "posate-ergonomiche",
+      "nome": "Posate ergonomiche",
+      "categoria": "aiuti-quotidiani",
+      "prezzo_centesimi": 2200,
+      "descrizione": "Impugnatura larga, più facile da usare.",
+      "descrizione_completa": "Impugnatura larga, più facile da usare.\n\nCaratteristiche\nSet da 3 pezzi.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🤝",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Ergonomic cutlery",
+          "descrizione": "Wide grip, easier to use.",
+          "descrizione_completa": "Wide grip, easier to use.\n\nFeatures\n3-piece set.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "calzascarpe-lungo",
+      "nome": "Calzascarpe lungo",
+      "categoria": "aiuti-quotidiani",
+      "prezzo_centesimi": 1100,
+      "descrizione": "Per calzare le scarpe senza chinarsi.",
+      "descrizione_completa": "Per calzare le scarpe senza chinarsi.\n\nCaratteristiche\nManico da 60 cm.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🤝",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Long shoehorn",
+          "descrizione": "To put on shoes without bending.",
+          "descrizione_completa": "To put on shoes without bending.\n\nFeatures\n60 cm handle.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "fonendoscopio",
+      "nome": "Fonendoscopio doppia campana",
+      "categoria": "studio-medico",
+      "prezzo_centesimi": 3800,
+      "descrizione": "Per visite e controlli di routine.",
+      "descrizione_completa": "Per visite e controlli di routine.\n\nCaratteristiche\nAcciaio, auricolari morbidi.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🩻",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Dual-head stethoscope",
+          "descrizione": "For checks and routine visits.",
+          "descrizione_completa": "For checks and routine visits.\n\nFeatures\nSteel, soft ear tips.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "otoscopio-led",
+      "nome": "Otoscopio a LED",
+      "categoria": "studio-medico",
+      "prezzo_centesimi": 5500,
+      "descrizione": "Luce chiara e lenti d'ingrandimento.",
+      "descrizione_completa": "Luce chiara e lenti d'ingrandimento.\n\nCaratteristiche\nInclude coni monouso.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🩻",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "LED otoscope",
+          "descrizione": "Clear light and magnifying lens.",
+          "descrizione_completa": "Clear light and magnifying lens.\n\nFeatures\nIncludes disposable tips.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "dispenser-gel",
+      "nome": "Dispenser per gel igienizzante",
+      "categoria": "sanificazione",
+      "prezzo_centesimi": 2600,
+      "descrizione": "Da parete o da tavolo, per studi e negozi.",
+      "descrizione_completa": "Da parete o da tavolo, per studi e negozi.\n\nCaratteristiche\nCapacità 1 litro.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🧴",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Hand gel dispenser",
+          "descrizione": "Wall or table, for practices and shops.",
+          "descrizione_completa": "Wall or table, for practices and shops.\n\nFeatures\n1-litre capacity.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "panni-monouso",
+      "nome": "Panni monouso per superfici",
+      "categoria": "sanificazione",
+      "prezzo_centesimi": 700,
+      "descrizione": "Per pulire in modo rapido le superfici.",
+      "descrizione_completa": "Per pulire in modo rapido le superfici.\n\nCaratteristiche\nConfezione da 100.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🧴",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Disposable surface wipes",
+          "descrizione": "For quick cleaning of surfaces.",
+          "descrizione_completa": "For quick cleaning of surfaces.\n\nFeatures\nPack of 100.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "test-rapido-demo-1",
+      "nome": "Test rapido di autodiagnosi (DEMO)",
+      "categoria": "autodiagnosi",
+      "prezzo_centesimi": 900,
+      "descrizione": "Categoria da verificare con le norme sui dispositivi diagnostici.",
+      "descrizione_completa": "Categoria da verificare con le norme sui dispositivi diagnostici.\n\nCaratteristiche\nScheda da completare con il fabbricante.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🧪",
+      "visibile": false,
+      "tr": {
+        "en": {
+          "nome": "Rapid self-test (DEMO)",
+          "descrizione": "Category to verify against diagnostic device rules.",
+          "descrizione_completa": "Category to verify against diagnostic device rules.\n\nFeatures\nSheet to complete with the manufacturer.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "test-rapido-demo-2",
+      "nome": "Test rapido di autodiagnosi 2 (DEMO)",
+      "categoria": "autodiagnosi",
+      "prezzo_centesimi": 1200,
+      "descrizione": "Categoria da verificare con le norme sui dispositivi diagnostici.",
+      "descrizione_completa": "Categoria da verificare con le norme sui dispositivi diagnostici.\n\nCaratteristiche\nScheda da completare con il fabbricante.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🧪",
+      "visibile": false,
+      "tr": {
+        "en": {
+          "nome": "Rapid self-test 2 (DEMO)",
+          "descrizione": "Category to verify against diagnostic device rules.",
+          "descrizione_completa": "Category to verify against diagnostic device rules.\n\nFeatures\nSheet to complete with the manufacturer.\nDEMO product: sample price and text."
         }
       }
     }
