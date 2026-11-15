@@ -2,33 +2,551 @@
   "_nota": "Catalogo dello shop (serve solo con ecommerce: true in _config.yml). Prezzi in CENTESIMI. Ogni prodotto/categoria ha anche una pagina in _negozio/ (layout negozio-prodotto con pid=<id>, negozio-categoria con cid=<id>). L'id categoria e' riservato. tipo: digitale (niente spedizione) o fisico. visibile:false nasconde senza cancellare. TRADUZIONI: ogni categoria/prodotto puo' avere \"tr\": {\"en\": {\"nome\": \"...\", \"descrizione\": \"...\", \"descrizione_completa\": \"...\"}}; campo mancante = si usa l'italiano.",
   "categorie": [
     {
-      "nome": "Esempio",
-      "id": "esempio",
-      "icona": "🛍️",
+      "nome": "Salvavita e primo soccorso",
+      "id": "salvavita-primo-soccorso",
+      "icona": "🛑",
       "tr": {
         "en": {
-          "nome": "Example"
+          "nome": "Life-saving and first aid"
+        }
+      }
+    },
+    {
+      "nome": "Misurazione e monitoraggio",
+      "id": "misurazione-monitoraggio",
+      "icona": "🩺",
+      "tr": {
+        "en": {
+          "nome": "Measuring and monitoring"
+        }
+      }
+    },
+    {
+      "nome": "Mobilità e ausili",
+      "id": "mobilita-ausili",
+      "icona": "🦽",
+      "tr": {
+        "en": {
+          "nome": "Mobility aids"
+        }
+      }
+    },
+    {
+      "nome": "Ortopedia e supporti",
+      "id": "ortopedia-supporti",
+      "icona": "🦵",
+      "tr": {
+        "en": {
+          "nome": "Orthopaedics and supports"
+        }
+      }
+    },
+    {
+      "nome": "Cura respiratoria",
+      "id": "respiratorio",
+      "icona": "🌬",
+      "tr": {
+        "en": {
+          "nome": "Respiratory care"
+        }
+      }
+    },
+    {
+      "nome": "Medicazione e disinfezione",
+      "id": "medicazione",
+      "icona": "🩹",
+      "tr": {
+        "en": {
+          "nome": "Dressings and disinfection"
+        }
+      }
+    },
+    {
+      "nome": "Igiene e incontinenza",
+      "id": "igiene-incontinenza",
+      "icona": "🛁",
+      "tr": {
+        "en": {
+          "nome": "Hygiene and incontinence"
+        }
+      }
+    },
+    {
+      "nome": "Elettromedicali per casa",
+      "id": "elettromedicali-casa",
+      "icona": "⚡",
+      "tr": {
+        "en": {
+          "nome": "Home electromedical devices"
+        }
+      }
+    },
+    {
+      "nome": "Letti e materassi sanitari",
+      "id": "letti-materassi",
+      "icona": "🛏",
+      "tr": {
+        "en": {
+          "nome": "Care beds and mattresses"
+        }
+      }
+    },
+    {
+      "nome": "Bagno sicuro",
+      "id": "bagno-sicuro",
+      "icona": "🚿",
+      "tr": {
+        "en": {
+          "nome": "Safe bathroom"
+        }
+      }
+    },
+    {
+      "nome": "DPI e abbigliamento sanitario",
+      "id": "dpi-abbigliamento",
+      "icona": "😷",
+      "tr": {
+        "en": {
+          "nome": "PPE and medical apparel"
         }
       }
     }
   ],
   "prodotti": [
     {
-      "tipo": "digitale",
-      "id": "prodotto-esempio",
-      "nome": "Prodotto di esempio",
-      "categoria": "esempio",
-      "prezzo_centesimi": 1000,
-      "descrizione": "Descrizione breve del prodotto di esempio.",
-      "descrizione_completa": "Descrizione completa del prodotto.\nOgni riga diventa un paragrafo.",
+      "tipo": "fisico",
+      "id": "cassetta-primo-soccorso",
+      "nome": "Cassetta di primo soccorso",
+      "categoria": "salvavita-primo-soccorso",
+      "prezzo_centesimi": 4500,
+      "descrizione": "Per casa, ufficio e auto, con contenuto ordinato.",
+      "descrizione_completa": "Per casa, ufficio e auto, con contenuto ordinato.\n\nCaratteristiche\nContenuto base, custodia rigida.\nProdotto DEMO: prezzo e testo di prova.",
       "immagine": "",
-      "icona": "🛍️",
+      "icona": "🛑",
       "visibile": true,
       "tr": {
         "en": {
-          "nome": "Example product",
-          "descrizione": "Short description of the example product.",
-          "descrizione_completa": "Full description of the product.\nEach line becomes a paragraph."
+          "nome": "First aid kit",
+          "descrizione": "For home, office and car, neatly organised.",
+          "descrizione_completa": "For home, office and car, neatly organised.\n\nFeatures\nBasic contents, hard case.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "coperta-isotermica",
+      "nome": "Coperta isotermica d'emergenza",
+      "categoria": "salvavita-primo-soccorso",
+      "prezzo_centesimi": 400,
+      "descrizione": "Leggera e compatta, sempre in borsa.",
+      "descrizione_completa": "Leggera e compatta, sempre in borsa.\n\nCaratteristiche\nFoglio isotermico, confezione singola.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🛑",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Emergency thermal blanket",
+          "descrizione": "Light and compact, always in your bag.",
+          "descrizione_completa": "Light and compact, always in your bag.\n\nFeatures\nThermal sheet, single pack.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "defibrillatore-aed",
+      "nome": "Defibrillatore semiautomatico (AED)",
+      "categoria": "salvavita-primo-soccorso",
+      "prezzo_centesimi": 149000,
+      "descrizione": "Prodotto DEMO nascosto: richiede verifica normativa prima della vendita.",
+      "descrizione_completa": "Prodotto DEMO nascosto: richiede verifica normativa prima della vendita.\n\nCaratteristiche\nScheda da completare con il fabbricante.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🛑",
+      "visibile": false,
+      "tr": {
+        "en": {
+          "nome": "Semi-automatic defibrillator (AED)",
+          "descrizione": "Hidden DEMO product: needs regulatory check before sale.",
+          "descrizione_completa": "Hidden DEMO product: needs regulatory check before sale.\n\nFeatures\nSheet to complete with the manufacturer.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "sfigmomanometro-braccio",
+      "nome": "Misuratore di pressione da braccio",
+      "categoria": "misurazione-monitoraggio",
+      "prezzo_centesimi": 3900,
+      "descrizione": "Display grande, memoria delle misure.",
+      "descrizione_completa": "Display grande, memoria delle misure.\n\nCaratteristiche\nBracciale regolabile.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🩺",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Upper-arm blood pressure monitor",
+          "descrizione": "Large display, memory for readings.",
+          "descrizione_completa": "Large display, memory for readings.\n\nFeatures\nAdjustable cuff.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "termometro-infrarossi",
+      "nome": "Termometro a infrarossi",
+      "categoria": "misurazione-monitoraggio",
+      "prezzo_centesimi": 2400,
+      "descrizione": "Misura in pochi secondi, senza contatto.",
+      "descrizione_completa": "Misura in pochi secondi, senza contatto.\n\nCaratteristiche\nFunziona a batterie.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🩺",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Infrared thermometer",
+          "descrizione": "Reads in seconds, no contact.",
+          "descrizione_completa": "Reads in seconds, no contact.\n\nFeatures\nBattery powered.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "deambulatore-pieghevole",
+      "nome": "Deambulatore pieghevole",
+      "categoria": "mobilita-ausili",
+      "prezzo_centesimi": 6900,
+      "descrizione": "Leggero, si chiude per il trasporto.",
+      "descrizione_completa": "Leggero, si chiude per il trasporto.\n\nCaratteristiche\nAlluminio, altezza regolabile.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🦽",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Folding walker",
+          "descrizione": "Light, folds for transport.",
+          "descrizione_completa": "Light, folds for transport.\n\nFeatures\nAluminium, adjustable height.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "bastone-regolabile",
+      "nome": "Bastone da passeggio regolabile",
+      "categoria": "mobilita-ausili",
+      "prezzo_centesimi": 1900,
+      "descrizione": "Impugnatura comoda, puntale antiscivolo.",
+      "descrizione_completa": "Impugnatura comoda, puntale antiscivolo.\n\nCaratteristiche\nAlluminio, regolabile in altezza.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🦽",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Adjustable walking stick",
+          "descrizione": "Comfortable grip, non-slip tip.",
+          "descrizione_completa": "Comfortable grip, non-slip tip.\n\nFeatures\nAluminium, height adjustable.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "tutore-ginocchio",
+      "nome": "Tutore per ginocchio",
+      "categoria": "ortopedia-supporti",
+      "prezzo_centesimi": 2900,
+      "descrizione": "Sostegno elastico per l'attività di ogni giorno.",
+      "descrizione_completa": "Sostegno elastico per l'attività di ogni giorno.\n\nCaratteristiche\nTaglie dalla S alla XL.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🦵",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Knee support",
+          "descrizione": "Elastic support for everyday activity.",
+          "descrizione_completa": "Elastic support for everyday activity.\n\nFeatures\nSizes S to XL.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "cuscino-lombare",
+      "nome": "Cuscino lombare ergonomico",
+      "categoria": "ortopedia-supporti",
+      "prezzo_centesimi": 3400,
+      "descrizione": "Per la sedia dell'ufficio o l'auto.",
+      "descrizione_completa": "Per la sedia dell'ufficio o l'auto.\n\nCaratteristiche\nMemory foam, fodera lavabile.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🦵",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Ergonomic lumbar cushion",
+          "descrizione": "For the office chair or the car.",
+          "descrizione_completa": "For the office chair or the car.\n\nFeatures\nMemory foam, washable cover.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "aerosol-pistone",
+      "nome": "Aerosol a pistone",
+      "categoria": "respiratorio",
+      "prezzo_centesimi": 5900,
+      "descrizione": "Per la terapia aerosolica in casa.",
+      "descrizione_completa": "Per la terapia aerosolica in casa.\n\nCaratteristiche\nKit con mascherine adulto e bambino.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🌬",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Piston nebuliser",
+          "descrizione": "For aerosol therapy at home.",
+          "descrizione_completa": "For aerosol therapy at home.\n\nFeatures\nKit with adult and child masks.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "umidificatore-ambiente",
+      "nome": "Umidificatore d'ambiente",
+      "categoria": "respiratorio",
+      "prezzo_centesimi": 4200,
+      "descrizione": "Silenzioso, adatto alla camera da letto.",
+      "descrizione_completa": "Silenzioso, adatto alla camera da letto.\n\nCaratteristiche\nSerbatoio da 3 litri.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🌬",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Room humidifier",
+          "descrizione": "Quiet, suited to the bedroom.",
+          "descrizione_completa": "Quiet, suited to the bedroom.\n\nFeatures\n3-litre tank.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "cerotti-assortiti",
+      "nome": "Cerotti assortiti",
+      "categoria": "medicazione",
+      "prezzo_centesimi": 600,
+      "descrizione": "Misure diverse per ogni piccola ferita.",
+      "descrizione_completa": "Misure diverse per ogni piccola ferita.\n\nCaratteristiche\nConfezione da 100.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🩹",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Assorted plasters",
+          "descrizione": "Different sizes for every small wound.",
+          "descrizione_completa": "Different sizes for every small wound.\n\nFeatures\nPack of 100.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "garze-sterili",
+      "nome": "Garze sterili",
+      "categoria": "medicazione",
+      "prezzo_centesimi": 800,
+      "descrizione": "Garze sterili monouso, bustine singole.",
+      "descrizione_completa": "Garze sterili monouso, bustine singole.\n\nCaratteristiche\nConfezione da 25.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🩹",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Sterile gauze pads",
+          "descrizione": "Single-use sterile gauze, individually wrapped.",
+          "descrizione_completa": "Single-use sterile gauze, individually wrapped.\n\nFeatures\nPack of 25.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "traverse-monouso",
+      "nome": "Traverse monouso",
+      "categoria": "igiene-incontinenza",
+      "prezzo_centesimi": 1500,
+      "descrizione": "Protezione per letto e poltrona.",
+      "descrizione_completa": "Protezione per letto e poltrona.\n\nCaratteristiche\nConfezione da 30.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🛁",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Disposable bed pads",
+          "descrizione": "Protection for bed and armchair.",
+          "descrizione_completa": "Protection for bed and armchair.\n\nFeatures\nPack of 30.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "guanti-nitrile",
+      "nome": "Guanti in nitrile",
+      "categoria": "igiene-incontinenza",
+      "prezzo_centesimi": 1000,
+      "descrizione": "Monouso, senza polvere.",
+      "descrizione_completa": "Monouso, senza polvere.\n\nCaratteristiche\nConfezione da 100, taglie S-XL.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🛁",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Nitrile gloves",
+          "descrizione": "Single-use, powder-free.",
+          "descrizione_completa": "Single-use, powder-free.\n\nFeatures\nPack of 100, sizes S-XL.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "elettrostimolatore-tens",
+      "nome": "Elettrostimolatore TENS",
+      "categoria": "elettromedicali-casa",
+      "prezzo_centesimi": 4900,
+      "descrizione": "Compatto, con più programmi.",
+      "descrizione_completa": "Compatto, con più programmi.\n\nCaratteristiche\nElettrodi inclusi.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "⚡",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "TENS electrostimulator",
+          "descrizione": "Compact, with several programmes.",
+          "descrizione_completa": "Compact, with several programmes.\n\nFeatures\nElectrodes included.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "massaggiatore-cervicale",
+      "nome": "Massaggiatore cervicale",
+      "categoria": "elettromedicali-casa",
+      "prezzo_centesimi": 5400,
+      "descrizione": "Per rilassare collo e spalle.",
+      "descrizione_completa": "Per rilassare collo e spalle.\n\nCaratteristiche\nRicaricabile via USB.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "⚡",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Neck massager",
+          "descrizione": "To relax neck and shoulders.",
+          "descrizione_completa": "To relax neck and shoulders.\n\nFeatures\nUSB rechargeable.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "materasso-antidecubito",
+      "nome": "Materasso antidecubito ad aria",
+      "categoria": "letti-materassi",
+      "prezzo_centesimi": 8900,
+      "descrizione": "Con compressore silenzioso.",
+      "descrizione_completa": "Con compressore silenzioso.\n\nCaratteristiche\nCelle ad aria alternate.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🛏",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Alternating-air anti-bedsore mattress",
+          "descrizione": "With a quiet compressor.",
+          "descrizione_completa": "With a quiet compressor.\n\nFeatures\nAlternating air cells.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "cuscino-antidecubito",
+      "nome": "Cuscino antidecubito",
+      "categoria": "letti-materassi",
+      "prezzo_centesimi": 3900,
+      "descrizione": "Per sedia e carrozzina.",
+      "descrizione_completa": "Per sedia e carrozzina.\n\nCaratteristiche\nFodera lavabile.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🛏",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Anti-bedsore cushion",
+          "descrizione": "For chair and wheelchair.",
+          "descrizione_completa": "For chair and wheelchair.\n\nFeatures\nWashable cover.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "sedile-wc-rialzato",
+      "nome": "Sedile WC rialzato",
+      "categoria": "bagno-sicuro",
+      "prezzo_centesimi": 3200,
+      "descrizione": "Alza la seduta per alzarsi con meno fatica.",
+      "descrizione_completa": "Alza la seduta per alzarsi con meno fatica.\n\nCaratteristiche\nCon braccioli, regolabile.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🚿",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Raised toilet seat",
+          "descrizione": "Raises the seat to make standing easier.",
+          "descrizione_completa": "Raises the seat to make standing easier.\n\nFeatures\nWith armrests, adjustable.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "sedia-doccia",
+      "nome": "Sedia per doccia",
+      "categoria": "bagno-sicuro",
+      "prezzo_centesimi": 4800,
+      "descrizione": "Seduta stabile con piedini antiscivolo.",
+      "descrizione_completa": "Seduta stabile con piedini antiscivolo.\n\nCaratteristiche\nAltezza regolabile.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "🚿",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Shower chair",
+          "descrizione": "Stable seat with non-slip feet.",
+          "descrizione_completa": "Stable seat with non-slip feet.\n\nFeatures\nAdjustable height.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "mascherine-ffp2",
+      "nome": "Mascherine FFP2",
+      "categoria": "dpi-abbigliamento",
+      "prezzo_centesimi": 1200,
+      "descrizione": "Comode, con elastici morbidi.",
+      "descrizione_completa": "Comode, con elastici morbidi.\n\nCaratteristiche\nConfezione da 20.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "😷",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "FFP2 masks",
+          "descrizione": "Comfortable, with soft ear loops.",
+          "descrizione_completa": "Comfortable, with soft ear loops.\n\nFeatures\nPack of 20.\nDEMO product: sample price and text."
+        }
+      }
+    },
+    {
+      "tipo": "fisico",
+      "id": "camice-monouso",
+      "nome": "Camice monouso",
+      "categoria": "dpi-abbigliamento",
+      "prezzo_centesimi": 1800,
+      "descrizione": "Per studi e visite a domicilio.",
+      "descrizione_completa": "Per studi e visite a domicilio.\n\nCaratteristiche\nConfezione da 10.\nProdotto DEMO: prezzo e testo di prova.",
+      "immagine": "",
+      "icona": "😷",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Disposable gown",
+          "descrizione": "For practices and home visits.",
+          "descrizione_completa": "For practices and home visits.\n\nFeatures\nPack of 10.\nDEMO product: sample price and text."
         }
       }
     }
